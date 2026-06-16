@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Routinemon" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSecondary">@color/secondary</item>
+
+        <item name="android:statusBarColor">@color/primary_variant</item>
+    </style>
+
+    <style name="Theme.Routinemon" parent="Base.Theme.Routinemon" />
+</resources>

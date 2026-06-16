@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StartActivity">
+
+    <ImageView
+        android:id="@+id/imgHatchBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/nest_bg"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A6000000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tvStartTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROUTINEMON"
+            android:textColor="#DEFF9A"
+            android:textSize="42sp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tvStartSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="당신의 루틴이 만드는 신화"
+            android:textColor="#A0AEC0"
+            android:textSize="16sp"
+            android:layout_marginBottom="40dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieStartPet"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginBottom="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/pet_animation" />
+
+        <ImageView
+            android:id="@+id/imgStartEgg"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/egg"
+            android:visibility="gone"
+            android:contentDescription="공룡알" />
+
+        <Button
+            android:id="@+id/btnStartContinue"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="모험 계속하기"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#121212"
+            android:backgroundTint="#DEFF9A"
+            app:cornerRadius="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/btnStartReset"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="처음부터 새로 시작"
+            android:textSize="16sp"
+            android:textColor="#DEFF9A"
+            android:backgroundTint="#2D3748"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+</FrameLayout>
